@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+html, body{
+    font-family: "SuisseIntl-Regular";
+    overflow-x: hidden;
+}
+
+html{
+    font-size: 62.5%;
+}
+ 
+  @font-face {
+	font-family: 'SuisseIntl-Regular'; 
+	src: local('SuisseIntl-Regular'),
+		url(./fonts/SuisseIntl-Regular.ttf) format('ttf');
+  }
+
+.container{
+    width: 100%;
+    max-width: 1860px;
+    margin: 0px auto;
+    color: #FAFAFA;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.header__img{
+    width: 2.9rem;
+    height: 2.9rem;
+}
+
+.header__about {
+    font-weight: 400;
+    font-size: 18px;
+    color: #1549FE;
+    text-decoration: none;
+}
+
+.header__about:hover{
+    color: #0E0E0E;
+}
+
+.header__exhibitions{
+    font-weight: 400;
+    font-size: 18px;
+    color: #1549FE;
+    text-decoration: none;
+}
+
+.header__exhibitions:hover{
+    color: #0E0E0E;
+}
+
+.header__residents{
+    font-weight: 400;
+    font-size: 18px;
+    color: #1549FE;
+    text-decoration: none;
+}
+
+.header__residents:hover{
+    color: #0E0E0E;
+}
+.header__merch{
+    font-weight: 400;
+    font-size: 18px;
+    color: #1549FE;
+    text-decoration: none;
+}
+
+.header__merch:hover{
+    color: #0E0E0E;
+}
+
+.header__bar{
+    font-weight: 400;
+    font-size: 18px;
+    color: #1549FE;
+    text-decoration: none;
+}
+
+.header__bar:hover{
+    color: #0E0E0E;
+}

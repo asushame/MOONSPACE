@@ -1,0 +1,371 @@
+/* @import "reset.css";сбрoc настроек браузера */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    font-family: "SuisseIntl-Regular";
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar{
+    width: 0.521vw;
+}
+
+::-webkit-scrollbar-track{
+    background: #E2E2E2;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #1549FE;
+    border-radius: 8px;
+    border:3px solid #1549FE;
+}
+
+
+  
+  @font-face {
+	font-family: 'SuisseIntl-Regular'; 
+	src: local('SuisseIntl-Regular'),
+		url(./fonts/SuisseIntl-Regular.ttf) format('ttf');
+  }
+
+.container{
+    width: 100%;
+    max-width: 1860px;
+    margin: 0px auto;
+    color: #FAFAFA;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.inner-cursor{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 15px;
+    height: 15px;
+    transform: translate(-50%, -50%);
+    background-color: #1549FE;
+    mix-blend-mode: normal; 
+    border-radius: 50%;
+    pointer-events: none;
+    transition: width 0.5s, height 0.5s;
+
+}
+
+.inner-cursor.grow {
+    width: 35px;
+    height: 35px;
+    transition: width 0.5s, height 0.5s;
+    border: 1px solid #1549FE;
+
+    /* background-color: transparent; */
+    
+}
+
+.outer-cursor{
+    position:fixed;
+    top: 10px; 
+    left: 10px;
+    width: 25px;
+    height: 25px;
+    transform: translate(-50%, -50%);
+    border: 1px solid #1549FE;
+    mix-blend-mode: normal;
+    border-radius: 50%;
+    pointer-events: none;
+    /* transition: 0.1s; */
+
+}
+
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top:1.042vw;
+    color: #1549FE;
+}
+
+.header__img{
+    width: 1.510vw;
+    height: 1.510vw;
+}
+
+.header__about {
+    font-weight: 400;
+    font-size: 0.938vw;
+    color: #1549FE;
+    text-decoration: none;
+}
+
+.header__about:hover{
+    color: #0E0E0E;
+}
+
+.header__exhibitions{
+    font-weight: 400;
+    font-size:  0.938vw;
+    color: #1549FE;
+    text-decoration: none;
+}
+
+.header__exhibitions:hover{
+    color: #0E0E0E;
+}
+
+.header__residents{
+    font-weight: 400;
+    font-size:  0.938vw;
+    color: #1549FE;
+    text-decoration: none;
+}
+
+.header__residents:hover{
+    color: #0E0E0E;
+}
+.header__merch{
+    font-weight: 400;
+    font-size:  0.938vw;
+    color: #1549FE;
+    text-decoration: none;
+}
+
+.header__merch:hover{
+    color: #0E0E0E;
+}
+
+.header__bar{
+    font-weight: 400;
+    font-size:  0.938vw;
+    color: #1549FE;
+    text-decoration: none;
+}
+
+.header__bar:hover{
+    color: #0E0E0E;
+}
+
+.h1{
+    margin-top: 6.979vw;
+    color: #1549FE;
+    font-size: 6vw;
+    line-height: 95.52%;
+/* or 117px */
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/*   */
+
+.area{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 34.427vw 18.958vw 41.354vw 42.240vw;
+    grid-template-areas: ". one one ." 
+                         ". twotext twotext two"             
+                         "three three . ."
+                         /* "four four four ." */
+                         ". . five five";
+    grid-row-gap:10.417vw;
+    margin-top: 60px;
+    grid-auto-flow: row;
+}
+
+.item1{
+    grid-area: one;
+    width: 100%;
+    height: 100%;
+    /* background-image: url(../img/about_one.png); */
+    /* grid-row: auto; */
+}
+
+.item1__picture, .item2__picture, .item3__picture, .item5__picture{
+    width: 100%;
+    height: 100%;
+}
+.item2{
+    grid-area: two;
+    height: 100%;
+    /* background-image: url(../img/about_two.png); */
+}
+
+
+.twotext{
+    grid-area: twotext;
+    height:auto;
+    color: #0E0E0E;
+}
+
+.twotext_text{
+    font-size: 1.6vw;
+    line-height: 98.02%;
+    /* or 34px */
+    text-transform: uppercase;
+    color: #0E0E0E;
+    text-align: top;
+}
+
+
+.item3{
+    grid-area: three;
+    height: 100%;
+    /* background-image: url(../img/about_three.png); */
+}
+
+/* .item4{
+    grid-area: four;
+    height: 200px;
+ 
+} */
+.four_text{
+    text-transform: uppercase;
+    color: #0E0E0E;
+    font-size: 2.7vw;
+    line-height: 98.02%;
+
+}
+.item5{
+    grid-area: five;
+    height: auto;
+    /* background-image: url(../img/about_four.png); */
+}
+
+.partners_container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 22.188vw;
+    margin-top: 100px;
+    border: 1px solid #1549FE;
+}
+
+.item-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1549FE;
+}
+
+
+
+.item-1_text{
+    font-size: 2.865vw;
+    line-height: 95.52%;
+    text-transform: uppercase;
+    color: #F3F3F3;
+}
+
+.item-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #1549FE;
+
+}
+
+.item-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #1549FE;
+
+}
+
+.item-4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #1549FE;
+}
+
+
+.artecom_logo_1{
+    width: 11.875vw;
+    height: 2.448vw;
+}
+
+.artecom_logo_2{
+    width: 3.646vw;
+    height: 2.448vw;
+}
+
+.artecom_logo_3{
+    width: 10.365vw;
+    height: 2.813vw;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:5.208vw;
+    margin-bottom: 2.604vw;
+    width: 100%;
+    height: 11.042vw;
+    background-color: #F3F3F3;
+}
+
+.footer-text_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 22.708vw;
+}
+
+.footer_text{
+    font-size: 1.302vw;
+    line-height: 95.52%;
+/* identical to box height, or 24px */
+    text-transform: uppercase;
+    color: #0E0E0E;
+}
+
+
+@media only screen and (max-device-width: 480px)  {
+    .partners_container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 39.583vw 39.583vw;
+        margin-top: 100px;
+        border: 1px solid #1549FE;
+    }
+
+}
+
+
+@media only screen and (max-device-width: 480px)  {
+    .footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 12.500vw;
+        margin-bottom: 8.333vw;
+        width: 100%;
+        height: 41.667vw;
+        background-color: #F3F3F3;
+    }
+    
+  }
+
+  @media only screen and (max-device-width:480px){
+    .footer-text_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4.167vw;
+    }
+  }
+
+  @media only screen and (max-device-width:480px){
+    .footer_text{
+    font-size: 3.333vw;
+    text-transform: uppercase;
+    color: #0E0E0E;
+}
+  }
